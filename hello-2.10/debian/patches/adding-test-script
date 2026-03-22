@@ -1,0 +1,321 @@
+Description: add testing script and install message
+ .
+ hello (2.10-3ubuntu2) noble; urgency=medium
+ .
+   * Add testing.sh and installation message
+Author: Bingbu Cao <bingbuidea@163.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout https://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: (upstream|backport|vendor|other), (<patch-url>|commit:<commit-id>)
+Bug: <upstream-bugtracker-url>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: (no|not-needed|<patch-forwarded-url>)
+Applied-Upstream: <version>, (<commit-url>|commit:<commid-id>)
+Reviewed-By: <name and email of someone who approved/reviewed the patch>
+Last-Update: 2026-03-22
+
+--- hello-2.10.orig/doc/hello.info
++++ hello-2.10/doc/hello.info
+@@ -1,9 +1,9 @@
+-This is hello.info, produced by makeinfo version 5.2 from hello.texi.
++This is hello.info, produced by makeinfo version 7.1 from hello.texi.
+ 
+-This manual is for GNU Hello (version 2.10, 19 July 2014), which prints
+-a friendly greeting (and serves as an example GNU package).
++This manual is for GNU Hello (version , 19 July 2014), which prints a
++friendly greeting (and serves as an example GNU package).
+ 
+-   Copyright (C) 1992, 1993, 1996, 2002, 2005-2014 Free Software
++   Copyright © 1992, 1993, 1996, 2002, 2005-2014 Free Software
+ Foundation, Inc.
+ 
+      Permission is granted to copy, distribute and/or modify this
+@@ -23,14 +23,14 @@ File: hello.info,  Node: Top,  Next: Ove
+ GNU Hello
+ *********
+ 
+-This manual is for GNU Hello (version 2.10, 19 July 2014), which prints
+-a friendly greeting (and serves as an example GNU package).
++This manual is for GNU Hello (version , 19 July 2014), which prints a
++friendly greeting (and serves as an example GNU package).
+ 
+ * Menu:
+ 
+ * Overview::		General purpose and information.
+-* Sample output::	Sample output from 'hello'.
+-* Invoking hello::	How to run 'hello'.
++* Sample output::	Sample output from ‘hello’.
++* Invoking hello::	How to run ‘hello’.
+ * Reporting bugs::	Sending bug reports and feature suggestions.
+ * GNU Free Documentation License:: Copying and sharing this documentation.
+ * Concept index::	Index of concepts.
+@@ -41,7 +41,7 @@ File: hello.info,  Node: Overview,  Next
+ 1 Overview
+ **********
+ 
+-The GNU 'hello' program (<http://www.gnu.org/software/hello/>) produces
++The GNU ‘hello’ program (<http://www.gnu.org/software/hello/>) produces
+ a familiar, friendly greeting.  It allows nonprogrammers to use a
+ classic computer science tool which would otherwise be unavailable to
+ them.  Because it is protected by the GNU General Public License, users
+@@ -60,29 +60,29 @@ should adhere to.
+    The Hello package also implements recommended development practices
+ not embodied in the standards, using other GNU packages and features:
+ 
+-   * It uses Automake (*note Introduction: (automake)Top.) and hence
++   • It uses Automake (*note Introduction: (automake)Top.) and hence
+      also Autoconf (*note Introduction: (autoconf)Top.) for
+      configuration.
+ 
+-   * It uses Gnulib (*note Introduction: (gnulib)Top.) to enhance
++   • It uses Gnulib (*note Introduction: (gnulib)Top.) to enhance
+      portability and avoid duplication of common sources.  Both
+-     'gnulib-tool' and 'srclist-update' are used, for purposes of
+-     example.  See the 'README-dev' file in the distribution.
++     ‘gnulib-tool’ and ‘srclist-update’ are used, for purposes of
++     example.  See the ‘README-dev’ file in the distribution.
+ 
+-   * GNU Gettext (*note Introduction: (gettext)Top.) is used for
++   • GNU Gettext (*note Introduction: (gettext)Top.) is used for
+      internationalization support.  Hello's greeting has been translated
+      into many languages.
+ 
+-   * Internally, Hello uses the GNU 'getopt_long' function (*note
++   • Internally, Hello uses the GNU ‘getopt_long’ function (*note
+      (libc)Getopt Long Options::) to parse options, thus supporting
+-     GNU-style long options such as '--help'.
++     GNU-style long options such as ‘--help’.
+ 
+-   * The Hello Man page is generated with GNU 'help2man' (*note
+-     Overview: (help2man)Top.) from the '--help' output.  This relieves
++   • The Hello Man page is generated with GNU ‘help2man’ (*note
++     Overview: (help2man)Top.) from the ‘--help’ output.  This relieves
+      the maintainers from the burden of updating separate man
+      documentation, yet provides a reasonable overview for man devotees.
+ 
+-   * Finally, Texinfo (*note Introduction: (texinfo)Top.) is the
++   • Finally, Texinfo (*note Introduction: (texinfo)Top.) is the
+      documentation format for this manual.  It supports output in Info,
+      HTML, PDF, DVI, plain text, XML, and other formats.
+ 
+@@ -90,19 +90,19 @@ not embodied in the standards, using oth
+ "hello world" examples in many other programming languages; see the
+ Gettext home page at <http://www.gnu.org/software/gettext/>.
+ 
+-   The top-level 'Makefile.am' in Hello also contains a few special
++   The top-level ‘Makefile.am’ in Hello also contains a few special
+ targets for other projects to adapt as desired:
+ 
+-'diff'
++‘diff’
+      Make a diff from the previous release, assuming the current tarball
+      is in the current tarball.
+ 
+-'po-check'
+-     Verify that all source files using '_()' are included for
+-     translation in 'po/POTFILES.in', so translators will have all the
++‘po-check’
++     Verify that all source files using ‘_()’ are included for
++     translation in ‘po/POTFILES.in’, so translators will have all the
+      messages.
+ 
+-'wwwdoc'
++‘wwwdoc’
+      Sample procedure for updating the manual on the GNU web site, in
+      this case <http://www.gnu.org/software/hello/manual/>.
+ 
+@@ -118,57 +118,57 @@ File: hello.info,  Node: Sample output,
+ 
+ Here are some examples of running GNU Hello.
+ 
+-   This is the output of the command 'hello':
++   This is the output of the command ‘hello’:
+ 
+      Hello, world!
+ 
+-   This is the output of the command 'hello --traditional':
++   This is the output of the command ‘hello --traditional’:
+ 
+      hello, world
+ 
+-   This is the output of the command 'hello --greeting=hi':
++   This is the output of the command ‘hello --greeting=hi’:
+ 
+      hi
+ 
+ 
+ File: hello.info,  Node: Invoking hello,  Next: Reporting bugs,  Prev: Sample output,  Up: Top
+ 
+-3 Invoking 'hello'
++3 Invoking ‘hello’
+ ******************
+ 
+-The format for running the 'hello' program is:
++The format for running the ‘hello’ program is:
+ 
+      hello OPTION ...
+ 
+-   With no options, 'hello' prints the greeting 'Hello, world!'.
++   With no options, ‘hello’ prints the greeting ‘Hello, world!’.
+ 
+-   'hello' supports the following options:
++   ‘hello’ supports the following options:
+ 
+-'--greeting=TEXT'
+-'-g TEXT'
++‘--greeting=TEXT’
++‘-g TEXT’
+      Output TEXT instead of the default greeting.
+ 
+-'--help'
+-'-h'
++‘--help’
++‘-h’
+      Print an informative help message on standard output and exit
+      successfully.
+ 
+-     For the '--help' output of GNU programs, it's strongly encouraged
++     For the ‘--help’ output of GNU programs, it's strongly encouraged
+      to include a brief (one or two sentences) description of what the
+      program does, as well as the synopsis of how to run the program.
+      Any environment variables which affect execution should also be
+      mentioned (Hello doesn't have any).
+ 
+-'--traditional'
+-'-t'
+-     Output the traditional greeting message 'hello, world'.
++‘--traditional’
++‘-t’
++     Output the traditional greeting message ‘hello, world’.
+ 
+-'--version'
+-'-v'
++‘--version’
++‘-v’
+      Print the version number and licensing information of Hello on
+      standard output and then exit successfully.
+ 
+-   If more than one of the greeting options ('-g', '-t', and their
++   If more than one of the greeting options (‘-g’, ‘-t’, and their
+ long-named equivalents) is specified, whichever comes last takes
+ precedence.
+ 
+@@ -184,21 +184,21 @@ please send electronic mail to <bug-hell
+    For bug reports, please include enough information for the
+ maintainers to reproduce the problem.  Generally speaking, that means:
+ 
+-   * The version numbers of Hello (which you can find by running
+-     'hello --version') and any other program(s) or manual(s) involved.
+-   * Hardware and operating system names and versions.
+-   * The contents of any input files necessary to reproduce the bug.
+-   * The expected behavior and/or output.
+-   * A description of the problem and samples of any erroneous output.
+-   * Options you gave to 'configure' other than specifying installation
++   • The version numbers of Hello (which you can find by running
++     ‘hello --version’) and any other program(s) or manual(s) involved.
++   • Hardware and operating system names and versions.
++   • The contents of any input files necessary to reproduce the bug.
++   • The expected behavior and/or output.
++   • A description of the problem and samples of any erroneous output.
++   • Options you gave to ‘configure’ other than specifying installation
+      directories.
+-   * Anything else that you think would be helpful.
++   • Anything else that you think would be helpful.
+ 
+    When in doubt whether something is needed or not, include it.  It's
+ better to include too much than to leave out something important.
+ 
+-   Patches are welcome; if possible, please make them with 'diff -c'
+-(*note Overview: (diff)Top.) and include 'ChangeLog' entries (*note
++   Patches are welcome; if possible, please make them with ‘diff -c’
++(*note Overview: (diff)Top.) and include ‘ChangeLog’ entries (*note
+ (emacs)Change Log::).  Please follow the existing coding style.
+ 
+ 
+@@ -209,7 +209,7 @@ Appendix A GNU Free Documentation Licens
+ 
+                      Version 1.3, 3 November 2008
+ 
+-     Copyright (C) 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
++     Copyright © 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
+      <http://fsf.org/>
+ 
+      Everyone is permitted to copy and distribute verbatim copies
+@@ -218,7 +218,7 @@ Appendix A GNU Free Documentation Licens
+   0. PREAMBLE
+ 
+      The purpose of this License is to make a manual, textbook, or other
+-     functional and useful document "free" in the sense of freedom: to
++     functional and useful document “free” in the sense of freedom: to
+      assure everyone the effective freedom to copy and redistribute it,
+      with or without modifying it, either commercially or
+      noncommercially.  Secondarily, this License preserves for the
+@@ -725,17 +725,17 @@ Concept index
+ * joke, not:                             Overview.             (line 12)
+ * King, The:                             Overview.             (line 71)
+ * MacKenzie, David:                      Overview.             (line 71)
+-* 'Makefile.am' targets:                 Overview.             (line 55)
++* Makefile.am targets:                   Overview.             (line 55)
+ * McGrath, Roland:                       Overview.             (line 71)
+ * modern:                                Invoking hello.       (line 31)
+ * options:                               Invoking hello.       (line  6)
+ * overview:                              Overview.             (line  6)
+ * patches, contributing:                 Reporting bugs.       (line 25)
+ * problems:                              Reporting bugs.       (line  6)
+-* 'README-dev' source file:              Overview.             (line 29)
++* README-dev source file:                Overview.             (line 29)
+ * reporting bugs:                        Reporting bugs.       (line  6)
+ * sample output:                         Sample output.        (line  6)
+-* 'srclist-update' script:               Overview.             (line 29)
++* srclist-update script:                 Overview.             (line 29)
+ * standards, GNU coding:                 Overview.             (line 17)
+ * standards, GNU maintainer:             Overview.             (line 17)
+ * Texinfo:                               Overview.             (line 47)
+@@ -745,12 +745,17 @@ Concept index
+ 
+ 
+ Tag Table:
+-Node: Top811
+-Node: Overview1344
+-Node: Sample output4520
+-Node: Invoking hello4908
+-Node: Reporting bugs6092
+-Node: GNU Free Documentation License7355
+-Node: Concept index32510
++Node: Top806
++Node: Overview1343
++Node: Sample output4587
++Node: Invoking hello4987
++Node: Reporting bugs6239
++Node: GNU Free Documentation License7532
++Node: Concept index32690
+ 
+ End Tag Table
++
++
++Local Variables:
++coding: utf-8
++End:
+--- hello-2.10.orig/doc/stamp-vti
++++ hello-2.10/doc/stamp-vti
+@@ -1,4 +1,4 @@
+ @set UPDATED 19 July 2014
+ @set UPDATED-MONTH July 2014
+-@set EDITION 2.10
+-@set VERSION 2.10
++@set EDITION 
++@set VERSION 
+--- hello-2.10.orig/doc/version.texi
++++ hello-2.10/doc/version.texi
+@@ -1,4 +1,4 @@
+ @set UPDATED 19 July 2014
+ @set UPDATED-MONTH July 2014
+-@set EDITION 2.10
+-@set VERSION 2.10
++@set EDITION 
++@set VERSION 

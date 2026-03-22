@@ -1,0 +1,37 @@
+hello (2.10-3ubuntu2) noble; urgency=medium
+
+  * Add testing.sh and installation message
+
+ -- Bingbu Cao <bingbuidea@163.com>  Sun, 22 Mar 2026 18:11:27 +0800
+
+hello (2.10-3ubuntu1) noble; urgency=medium
+
+  * Add testing.sh and installation message
+
+ -- Bingbu Cao <bingbuidea@163.com>  Sun, 22 Mar 2026 18:06:38 +0800
+
+hello (2.10-3build1) noble; urgency=high
+
+  * No change rebuild for 64-bit time_t and frame pointers.
+
+ -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 08 Apr 2024 17:58:52 +0200
+
+hello (2.10-3) unstable; urgency=medium
+
+  * Add some autopkgtests. Closes: #871622.
+  * Add Vcs-Git and Vcs-Browser fields to debian/control. Closes: #893083.
+  * Raise debhelper compat level from 9 to 13. This enables autoreconf,
+    and as a result, some additional build-dependencies are required:
+  - Add texinfo to Build-Depends, for a normal build.
+  - Add help2man to Build-Depends, for a build using git.
+  * Use secure URI in Homepage field.
+  * Set upstream metadata fields Bug-Submit, Name and Repository-Browse.
+  * Add upstream signing-key.
+  * Use a common debian/watch file which is valid for most GNU packages.
+  * Sort control fields using wrap-and-sort.
+  * Update standards version to 4.6.2.
+
+ -- Santiago Vila <sanvila@debian.org>  Mon, 26 Dec 2022 16:30:00 +0100
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog hello`.

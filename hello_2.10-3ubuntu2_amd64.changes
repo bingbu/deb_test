@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Sun, 22 Mar 2026 18:11:27 +0800
+Source: hello
+Binary: hello
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.10-3ubuntu2
+Distribution: noble
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Bingbu Cao <bingbuidea@163.com>
+Description:
+ hello      - example package based on GNU hello
+Changes:
+ hello (2.10-3ubuntu2) noble; urgency=medium
+ .
+   * Add testing.sh and installation message
+Checksums-Sha1:
+ b300588093eca171a5c1d8fe97bd776e9050637e 26562 hello-dbgsym_2.10-3ubuntu2_amd64.ddeb
+ 197a4c2a6ece7a3cec7b6dfdea3f71a5b8b25abf 8364 hello_2.10-3ubuntu2_amd64.buildinfo
+ 49b6d686066ffcefafdcd81ebabec67fdd959bf6 48748 hello_2.10-3ubuntu2_amd64.deb
+Checksums-Sha256:
+ 934179e43a05b79661bdc53363faecb954e508e76b316767fb90c84300873ae3 26562 hello-dbgsym_2.10-3ubuntu2_amd64.ddeb
+ 939486edb443d26ff6ef686ed777f33944162fb565b74eef3306e982a946c449 8364 hello_2.10-3ubuntu2_amd64.buildinfo
+ 5d0189fed429806912f7d0f1c751b0eb0f670bfae06eb8a37efd55363cd93f69 48748 hello_2.10-3ubuntu2_amd64.deb
+Files:
+ 3cc3322cf7ee9a0771b605877af12114 26562 debug optional hello-dbgsym_2.10-3ubuntu2_amd64.ddeb
+ cce99c5accc9f0f7cb191f8ed9ee5de2 8364 devel optional hello_2.10-3ubuntu2_amd64.buildinfo
+ db2f5c705bfa98871d596ca6c28c22d9 48748 devel optional hello_2.10-3ubuntu2_amd64.deb
+Original-Maintainer: Santiago Vila <sanvila@debian.org>

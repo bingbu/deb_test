@@ -1,0 +1,51 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 22 Mar 2026 18:11:27 +0800
+Source: hello
+Built-For-Profiles: noudeb
+Architecture: source
+Version: 2.10-3ubuntu2
+Distribution: noble
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Bingbu Cao <bingbuidea@163.com>
+Changes:
+ hello (2.10-3ubuntu2) noble; urgency=medium
+ .
+   * Add testing.sh and installation message
+Checksums-Sha1:
+ ececb6127792ef5861e9770a17482bd7c634616f 1999 hello_2.10-3ubuntu2.dsc
+ f7bebf6f9c62a2295e889f66e05ce9bfaed9ace3 725946 hello_2.10.orig.tar.gz
+ 9dc7a584db576910856ac7aa5cffbaeefe9cf427 819 hello_2.10.orig.tar.gz.asc
+ f8e9fd0579f2039479adc01190bbb69ec9d89f45 16688 hello_2.10-3ubuntu2.debian.tar.xz
+ 0d7fb97c487abf63e02a262b26b75454e4c4a901 8752 hello_2.10-3ubuntu2_source.buildinfo
+Checksums-Sha256:
+ 88eaf7c3996e46e2fd1a54a80b92461983499688a21917c31445dca894b5f982 1999 hello_2.10-3ubuntu2.dsc
+ 31e066137a962676e89f69d1b65382de95a7ef7d914b8cb956f41ea72e0f516b 725946 hello_2.10.orig.tar.gz
+ 4ea69de913428a4034d30dcdcb34ab84f5c4a76acf9040f3091f0d3fac411b60 819 hello_2.10.orig.tar.gz.asc
+ 42a40b21d8032fee0a73ac523b1246d450565b24fe1a407cddd3d9ef11876ecf 16688 hello_2.10-3ubuntu2.debian.tar.xz
+ 5aa80834e778edea51132b532c08b0763af5f951cd131df65c4cb44fb6ac3116 8752 hello_2.10-3ubuntu2_source.buildinfo
+Files:
+ 8220e730e1e839adf10c3b2f1cf006de 1999 devel optional hello_2.10-3ubuntu2.dsc
+ 6cd0ffea3884a4e79330338dcc2987d6 725946 devel optional hello_2.10.orig.tar.gz
+ e6074bb23a0f184e00fdfb5c546b3bc2 819 devel optional hello_2.10.orig.tar.gz.asc
+ 260db0df6cd1952578261cab78338f00 16688 devel optional hello_2.10-3ubuntu2.debian.tar.xz
+ 247222bd6b88ee29036169a83633b1ca 8752 devel optional hello_2.10-3ubuntu2_source.buildinfo
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEE5JPi27UUA90cTsM4c63Nuc10IWcFAmm/xE8ACgkQc63Nuc10
+IWfvIgv9HMBZSpSLifiBpPS/lofNrI0qwZwNN29lLci4GxklV3xb9Czqg4OxeW86
+RT7XykdnBZiVmWrWIVYV53yPxJEpeBKXxFUxIPTyFuGsYjHld2E0uB6KtUHviL5R
+QdYPIhOC37LxelxWhTd+npTXZvBPqK4tBYMaV8ZqTC4UVe3QDnMeCtXmYCYHylxK
+jYLY6JbwD3zcFJL5lB727izGqJH68BHXRw5CD6UD38Qw1kX6rPR3zjhxz137ddx4
+uT9M0Ve/4uJ5nmVlcn+g2hst7Mrj2ItkzvupXE2jqheEGMQMYbqN+pDZk8ZtTr84
+2yL81ToRm9T3RjDlvPqZCDu1OYO3OKTuBpdYHwJEMdWCF6CiaE6Ef3cBwyvBxjHM
+XKMxzAqR9+isaiw61U4Lja8ihg6xRkPXJH0fS9IfTlIfD7OOME1aBbIaSsN1rnFK
+bQ366D7SIYGogc8HWsDAjXWsRM1DuO+9HHq02fgOVhK8iwEijzu+Zcsou0bmHySe
+SDOwRwHn
+=a4tI
+-----END PGP SIGNATURE-----

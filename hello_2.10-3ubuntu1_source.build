@@ -1,0 +1,25 @@
+ dpkg-buildpackage -us -uc -ui -S -sa
+dpkg-buildpackage: info: source package hello
+dpkg-buildpackage: info: source version 2.10-3ubuntu1
+dpkg-buildpackage: info: source distribution noble
+dpkg-buildpackage: info: source changed by Bingbu Cao <bingbuidea@163.com>
+ dpkg-source --before-build .
+ debian/rules clean
+dh clean
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/home/bingbu/codebase/deb_test/hello-2.10'
+[ ! -f Makefile ] || /usr/bin/make distclean
+make[1]: Leaving directory '/home/bingbu/codebase/deb_test/hello-2.10'
+   dh_clean
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: verifying ./hello_2.10.orig.tar.gz.asc
+dpkg-source: info: building hello using existing ./hello_2.10.orig.tar.gz
+dpkg-source: info: building hello using existing ./hello_2.10.orig.tar.gz.asc
+dpkg-source: warning: executable mode 0775 of 'testing.sh' will not be represented in diff
+dpkg-source: info: local changes detected, the modified files are:
+ hello-2.10/testing.sh
+dpkg-source: error: aborting due to unexpected upstream changes, see /tmp/hello_2.10-3ubuntu1.diff.HAOoMi
+dpkg-source: info: Hint: make sure the version in debian/changelog matches the unpacked source tree
+dpkg-source: info: you can integrate the local changes with dpkg-source --commit
+dpkg-buildpackage: error: dpkg-source -b . subprocess returned exit status 2
